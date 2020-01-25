@@ -1,0 +1,14 @@
+127.0.0.1 - - [18/Jan/2020:18:14:53 -0600] "GET / HTTP/1.1" 404 709
+127.0.0.1 - - [18/Jan/2020:19:00:06 -0600] "GET / HTTP/1.1" 404 709
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:19:00:07 -0600] "GET /WebBasedApp/registration.html HTTP/1.1" 200 999
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:19:00:39 -0600] "GET /WebBasedApp/registration.html?firstname=&lastname=&salary=&username=&password= HTTP/1.1" 200 999
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:19:01:49 -0600] "GET /WebBasedApp/registration.html HTTP/1.1" 200 1004
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:19:02:38 -0600] "GET /WebBasedApp/registration.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:19:02:46 -0600] "GET /WebBasedApp/registration.html HTTP/1.1" 200 995
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:19:03:09 -0600] "GET /WebBasedApp/registration.html HTTP/1.1" 200 999
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:19:11:28 -0600] "GET /WebBasedApp/registration.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:19:12:16 -0600] "GET /WebBasedApp/registration.html HTTP/1.1" 200 999
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:19:14:34 -0600] "GET /WebBasedApp/registration.html HTTP/1.1" 200 1058
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:19:14:55 -0600] "GET /WebBasedApp/registration.html HTTP/1.1" 200 1059
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:19:16:55 -0600] "GET /WebBasedApp/registration.html HTTP/1.1" 200 1086
+0:0:0:0:0:0:0:1 - - [18/Jan/2020:19:17:34 -0600] "GET /WebBasedApp/registration.html HTTP/1.1" 200 1092

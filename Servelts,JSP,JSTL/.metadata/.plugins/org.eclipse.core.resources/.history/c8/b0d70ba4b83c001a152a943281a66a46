@@ -1,0 +1,53 @@
+package com.controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.dao.EmployeeDao;
+import com.model.Employee;
+
+@WebServlet("/reg.htm")
+public class RegistrationServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    
+	/*
+	 * public void init() { System.out.println("init method is called"); }
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response); //sending request to doPost because we do not know what kind of request is coming....
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// pull the data from the user entered request object.
+		String fname = request.getParameter("firstname");
+		String lname = request.getParameter("lastname");
+		String gender = request.getParameter("gender");
+		double salary = Double.parseDouble(request.getParameter("salary"));
+		String uname = request.getParameter("username");
+		String password = request.getParameter("password");
+		System.out.println(fname+"\t"+lname+"\t"+gender+"\t"+salary+"\t"+uname+"\t"+password);
+		
+		
+		//creating employee object with user entered values
+		Employee employee = new Employee(fname, lname, gender, salary, uname, password);
+		
+		EmployeeDao eDao = new EmployeeDao();
+		eDao.createEmployee(employee);   //calling Dao object to store data into mysql
+		
+		//after storing data.. forwarding control to login.html
+		RequestDispatcher dispatcher = request.getRequestDispatcher("login.html");
+		dispatcher.forward(request, response); 
+	}
+	
+	
+	/*
+	 * public void destroy() { System.out.println("destroy method is called"); }
+	 */
+
+}

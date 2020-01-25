@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Registration</title>
+	</head>
+	<body>
+		<h3 align = "center">Add Employee</h3>
+		<form action = "reg.htm " method= "post">
+		<!-- WE CAN USE EITHER WAY <form action = "https://localhost:8080/WebBasedDemo/create.htm">  -->
+			<table align = "center">
+				<tr>
+					<td>FirstName</td>
+					<td><input type = "text" name= "firstname"></td>
+				</tr>
+				<tr>
+					<td>LastName</td>
+					<td><input type = "text" name= "lastname"></td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td><input type = "radio" name= "gender" value="Male">Male
+						<input type = "radio" name= "gender" value="female">Female
+					</td>
+				</tr>
+				<tr>
+					<td>Salary</td>
+					<td><input type = "text" name= "salary"></td>
+				</tr>
+				<tr>
+					<td>Username</td>
+					<td><input type = "text" name= "username"></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type = "password" name= "password"></td>
+				</tr>
+				<tr>
+					<td colspan =2 align = "right"><input type = "reset" value= "clear">
+													<input type = "submit" value= "submit">
+					</td>
+					
+				</tr>
+			</table>		
+		</form>
+	</body>
+</html>
